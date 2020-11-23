@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+html, body {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;  
+}
+html {
+  background-image: url('./images/bg-pattern-bottom-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+body {
+  min-height: 100%;
+    margin: 0;
+    padding: 0;
+  background-image: url('./images/bg-pattern-top-desktop.svg');
+  background-repeat: no-repeat;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+.top, .testimonials {
+  padding-top: 8rem;
+  display:flex;
+  justify-content: space-between;
+}
+.intro {  
+  width: 40%;
+}
+.title {
+  width: 75%;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: hsl(300, 43%, 22%);
+}
+.description {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  color: hsl(303, 10%, 53%);
+  font-size: 15px;
+}
+.ratings div {
+  font-size: 15px;
+  font-weight: 700;
+  /* width: 380px; */
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color:hsl(300, 24%, 96%);
+}
+.ratings span {
+  margin-left: 2rem;
+}
+.ratings div:nth-child(1) {
+  transform: translateX(-100px);
+}
+.ratings div:nth-child(2) {
+  transform: translateX(-50px);
+}
+.ratings div:nth-child(3) {
+  transform: translateX(0px);
+}
+.testimonials { 
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  flex: 0 1 300px;
+  border-radius: 10px;  
+  padding: 2rem;
+  color: hsl(300, 24%, 96%); 
+  background-color: hsl(300, 43%, 22%);
+}
+.card:nth-child(2) {
+  transform: translateY(20px);
+}
+.card:nth-child(3) {
+  transform: translateY(40px);
+}
+.author { 
+  display: flex;  
+  flex-direction: column;
+  padding: 1rem;  
+  line-height: 1.5rem;
+  color: hsl(333, 80%, 67%);
+}
+.card img {
+  padding: 15px;
+  width: 50px;
+  float: left;
+  border-radius: 50%;
+}
+.author span {
+  color: white;
+  font-weight: 600;
+}
+.testimony {
+  margin: 1.5rem 0;
+  display: inline-block;
+  word-spacing: 1px;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 910px) {
+  html {
+    background-image: url('./images/bg-pattern-bottom-mobile.svg');    
+  }
+  body {
+    background-image: url('./images/bg-pattern-top-mobile.svg'); 
+  }
+  .top {
+    margin: 0 auto;
+    max-width: 375px;
+    padding-top: 3rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    width: 80%;
+  }
+  .title {
+    width: auto;
+    font-size: 2rem;
+  }
+  .description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .ratings div:nth-child(1) {
+    transform: none;
+  }
+  .ratings div:nth-child(2) {
+    transform: none;
+  }
+  .ratings div:nth-child(3) {
+    transform: none;
+  }
+  .ratings {
+    width: 375px;
+  }
+  .ratings div {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  .testimonials {
+    max-width: 375px;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .card {
+    
+  }
+}
