@@ -75,7 +75,7 @@ p{
 
 .row{
     display: none;
-    background: url(../faq-accordion-card-main/images/illustration-woman-online-desktop.svg) no-repeat,
+    background: url(images/illustration-woman-online-desktop.svg) no-repeat,
     url(../faq-accordion-card-main/images/bg-pattern-desktop.svg) no-repeat;
     background-position: -60px 80px, -550px -280px;
 }
